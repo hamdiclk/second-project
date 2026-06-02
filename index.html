@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portföy | Adınız Soyadınız</title>
+  <title>Randevu | Adınız Soyadınız</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,9 +12,8 @@
       <a class="brand" href="#home">Adınız Soyadınız</a>
       <nav class="nav">
         <a href="#home">Ana Sayfa</a>
-        <a href="#about">Hakkımda</a>
-        <a href="#skills">Yetenekler</a>
-        <a href="#projects">Projeler</a>
+        <a href="#services">Hizmetler</a>
+        <a href="#appointment">Randevu</a>
         <a href="#contact">İletişim</a>
       </nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Temayı değiştir">☀️</button>
@@ -22,97 +21,105 @@
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero appointment-hero" id="home">
       <div class="container hero-content">
         <div>
-          <p class="eyebrow">Merhaba, ben</p>
-          <h1>Adınız Soyadınız</h1>
-          <p class="hero-text">Web geliştirici / UI tasarımcısı / dijital ürün sahibi.</p>
+          <p class="eyebrow">Randevu Al</p>
+          <h1>Hızlı ve kolay hizmet rezervasyonu</h1>
+          <p class="hero-text">İstediğiniz zamanda randevu alın, seçtiğiniz hizmet için uygun saatleri keşfedin ve iletişim bilgilerinizi paylaşın.</p>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Projelerime Göz At</a>
-            <a href="#contact" class="btn btn-secondary">İletişim</a>
+            <a href="#appointment" class="btn btn-primary">Randevu Oluştur</a>
+            <a href="#services" class="btn btn-secondary">Hizmetler</a>
           </div>
         </div>
-        <div class="hero-card">
+        <div class="hero-card appointment-card">
           <div class="hero-card-inner">
-            <p>Portföyümde modern, etkileyici ve kullanıcı odaklı çözümler yer alır.</p>
+            <div class="status-badge">Açık</div>
+            <h2>Bugünün Boş Saatleri</h2>
+            <ul class="schedule-list">
+              <li>09:00 - 09:45</li>
+              <li>11:00 - 11:45</li>
+              <li>14:00 - 14:45</li>
+              <li>16:30 - 17:15</li>
+            </ul>
+            <p>Size en uygun zamanı seçin ve hızlı bir şekilde randevunuzu ayarlayın.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container section-grid">
+    <section class="section bg-light" id="services">
+      <div class="container">
+        <span class="section-label">Hizmetler</span>
+        <h2>Hangi konularda randevu alabilirsiniz?</h2>
+        <div class="projects-grid appointment-services">
+          <article class="project-card">
+            <h3>Danışmanlık</h3>
+            <p>Proje gereksinimlerinizi değerlendirmek ve ilk adımları belirlemek için özel görüşme.</p>
+          </article>
+          <article class="project-card">
+            <h3>Web Tasarım</h3>
+            <p>Kullanıcı deneyimi ve marka uyumlu tasarım çözümleri için bire bir toplantı.</p>
+          </article>
+          <article class="project-card">
+            <h3>Marka Stratejisi</h3>
+            <p>Hedef kitleniz ve dijital görünürlüğünüz üzerinde çalışarak etkili planlama.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="appointment">
+      <div class="container appointment-grid">
         <div>
-          <span class="section-label">Hakkımda</span>
-          <h2>Kendimi Tanıtayım</h2>
-          <p>Ben bir web geliştiricisiyim. Frontend ve temel backend becerilerimle kullanıcı deneyimini ön planda tutan projeler geliştiriyorum. Tasarım fikirlerini kodla buluşturuyorum.</p>
-          <ul class="about-list">
-            <li>Modern web arayüzleri</li>
-            <li>Responsive tasarım</li>
-            <li>Performans ve erişilebilirlik</li>
-          </ul>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <strong>5+</strong>
-            <span>Yıl deneyim</span>
-          </div>
-          <div class="stat-card">
-            <strong>10+</strong>
-            <span>Canlı proje</span>
-          </div>
-          <div class="stat-card">
-            <strong>15+</strong>
-            <span>Mutlu müşteri</span>
+          <span class="section-label">Randevu</span>
+          <h2>Randevu bilgilerinizi girin</h2>
+          <p>Formu doldurun, uygun saat dilimini seçin ve randevunuzu hızlıca kesinleştirin.</p>
+          <div class="appointment-details">
+            <p><strong>Süre:</strong> 45 dakika</p>
+            <p><strong>Konum:</strong> Online / Ofis</p>
+            <p><strong>Hazırlık:</strong> İhtiyaçlarınızı kısa bir notla belirtin.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section bg-light" id="skills">
-      <div class="container">
-        <span class="section-label">Yetenekler</span>
-        <h2>Ne Yapabilirim?</h2>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3>HTML & CSS</h3>
-            <p>Temiz ve semantik yapılarla etkileyici web sayfaları oluşturuyorum.</p>
-          </article>
-          <article class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Etkin dinamik deneyimler için modern JavaScript kullanıyorum.</p>
-          </article>
-          <article class="skill-card">
-            <h3>React / Vue</h3>
-            <p>Bileşen tabanlı arayüzlerle hızlı ve yeniden kullanılabilir uygulamalar geliştiriyorum.</p>
-          </article>
-          <article class="skill-card">
-            <h3>Tasarım</h3>
-            <p>Kullanıcı dostu arayüzler ve akıcı kullanılabilirlik sunuyorum.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="container">
-        <span class="section-label">Projeler</span>
-        <h2>Son Projelerim</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>Proje Adı 1</h3>
-            <p>Bir işlevsel web sitesi ile marka kimliğini güçlendiren çözüm.</p>
-          </article>
-          <article class="project-card">
-            <h3>Proje Adı 2</h3>
-            <p>Hızlı ve erişilebilir kullanıcı deneyimi sağlayan arayüz tasarımı.</p>
-          </article>
-          <article class="project-card">
-            <h3>Proje Adı 3</h3>
-            <p>Modern frontend teknolojileriyle geliştirilmiş interaktif proje.</p>
-          </article>
-        </div>
+        <form id="appointmentForm" class="appointment-form">
+          <div class="form-grid">
+            <label>
+              Ad Soyad
+              <input type="text" name="name" placeholder="Adınız Soyadınız" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Email adresiniz" required />
+            </label>
+            <label>
+              Telefon
+              <input type="tel" name="phone" placeholder="+90 5XX XXX XX XX" required />
+            </label>
+            <label>
+              Hizmet Seçimi
+              <select name="service" required>
+                <option value="">Hizmet seçin</option>
+                <option>Danışmanlık</option>
+                <option>Web Tasarım</option>
+                <option>Marka Stratejisi</option>
+              </select>
+            </label>
+            <label>
+              Tarih
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Saat
+              <input type="time" name="time" required />
+            </label>
+          </div>
+          <label>
+            Ek Notlar
+            <textarea name="notes" rows="4" placeholder="Toplantıda ele almak istediğiniz konuları yazın"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Randevu Talep Et</button>
+          <p id="formSuccess" class="form-success" hidden>Randevu isteğiniz alındı! En kısa sürede size dönüş yapılacaktır.</p>
+        </form>
       </div>
     </section>
 
@@ -120,28 +127,18 @@
       <div class="container contact-grid">
         <div>
           <span class="section-label">İletişim</span>
-          <h2>Birlikte çalışalım</h2>
-          <p>Projeleriniz için her zaman hazır ve istekliyim. Aşağıdaki bilgileri kullanarak bana ulaşabilirsiniz.</p>
+          <h2>Sorularınız mı var?</h2>
+          <p>Randevu seçenekleri veya hizmet detayları hakkında bilgi almak için bize ulaşın.</p>
           <div class="contact-info">
             <p><strong>Email:</strong> email@ornek.com</p>
             <p><strong>Telefon:</strong> +90 555 555 55 55</p>
           </div>
         </div>
-        <form class="contact-form">
-          <label>
-            İsim
-            <input type="text" placeholder="Adınız" />
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="Email adresiniz" />
-          </label>
-          <label>
-            Mesaj
-            <textarea rows="5" placeholder="Mesajınızı yazın"></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary">Gönder</button>
-        </form>
+        <div class="contact-card">
+          <h3>Hemen konuşalım</h3>
+          <p>Randevu almak için yukarıdaki formu kullanabilir veya doğrudan bize yazabilirsiniz.</p>
+          <a href="mailto:email@ornek.com" class="btn btn-secondary">Email Gönder</a>
+        </div>
       </div>
     </section>
   </main>

@@ -26,6 +26,22 @@ function toggleTheme() {
 
 themeToggle.addEventListener('click', toggleTheme);
 
+const appointmentForm = document.getElementById('appointmentForm');
+const formSuccess = document.getElementById('formSuccess');
+
+if (appointmentForm) {
+  appointmentForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    appointmentForm.reset();
+    if (formSuccess) {
+      formSuccess.hidden = false;
+      setTimeout(() => {
+        formSuccess.hidden = true;
+      }, 5000);
+    }
+  });
+}
+
 const navLinks = document.querySelectorAll('.nav a');
 const sections = document.querySelectorAll('main section');
 
