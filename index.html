@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portföy | Adınız Soyadınız</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Adınız Soyadınız</a>
+      <nav class="nav">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımda</a>
+        <a href="#skills">Yetenekler</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Temayı değiştir">☀️</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Merhaba, ben</p>
+          <h1>Adınız Soyadınız</h1>
+          <p class="hero-text">Web geliştirici / UI tasarımcısı / dijital ürün sahibi.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Projelerime Göz At</a>
+            <a href="#contact" class="btn btn-secondary">İletişim</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <p>Portföyümde modern, etkileyici ve kullanıcı odaklı çözümler yer alır.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container section-grid">
+        <div>
+          <span class="section-label">Hakkımda</span>
+          <h2>Kendimi Tanıtayım</h2>
+          <p>Ben bir web geliştiricisiyim. Frontend ve temel backend becerilerimle kullanıcı deneyimini ön planda tutan projeler geliştiriyorum. Tasarım fikirlerini kodla buluşturuyorum.</p>
+          <ul class="about-list">
+            <li>Modern web arayüzleri</li>
+            <li>Responsive tasarım</li>
+            <li>Performans ve erişilebilirlik</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <strong>5+</strong>
+            <span>Yıl deneyim</span>
+          </div>
+          <div class="stat-card">
+            <strong>10+</strong>
+            <span>Canlı proje</span>
+          </div>
+          <div class="stat-card">
+            <strong>15+</strong>
+            <span>Mutlu müşteri</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light" id="skills">
+      <div class="container">
+        <span class="section-label">Yetenekler</span>
+        <h2>Ne Yapabilirim?</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>HTML & CSS</h3>
+            <p>Temiz ve semantik yapılarla etkileyici web sayfaları oluşturuyorum.</p>
+          </article>
+          <article class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Etkin dinamik deneyimler için modern JavaScript kullanıyorum.</p>
+          </article>
+          <article class="skill-card">
+            <h3>React / Vue</h3>
+            <p>Bileşen tabanlı arayüzlerle hızlı ve yeniden kullanılabilir uygulamalar geliştiriyorum.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Tasarım</h3>
+            <p>Kullanıcı dostu arayüzler ve akıcı kullanılabilirlik sunuyorum.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <span class="section-label">Projeler</span>
+        <h2>Son Projelerim</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Proje Adı 1</h3>
+            <p>Bir işlevsel web sitesi ile marka kimliğini güçlendiren çözüm.</p>
+          </article>
+          <article class="project-card">
+            <h3>Proje Adı 2</h3>
+            <p>Hızlı ve erişilebilir kullanıcı deneyimi sağlayan arayüz tasarımı.</p>
+          </article>
+          <article class="project-card">
+            <h3>Proje Adı 3</h3>
+            <p>Modern frontend teknolojileriyle geliştirilmiş interaktif proje.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-label">İletişim</span>
+          <h2>Birlikte çalışalım</h2>
+          <p>Projeleriniz için her zaman hazır ve istekliyim. Aşağıdaki bilgileri kullanarak bana ulaşabilirsiniz.</p>
+          <div class="contact-info">
+            <p><strong>Email:</strong> email@ornek.com</p>
+            <p><strong>Telefon:</strong> +90 555 555 55 55</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <label>
+            İsim
+            <input type="text" placeholder="Adınız" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="Email adresiniz" />
+          </label>
+          <label>
+            Mesaj
+            <textarea rows="5" placeholder="Mesajınızı yazın"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Adınız Soyadınız. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
